@@ -20,7 +20,7 @@ var cfgFile string
 
 func getConfig() (saramaConfig *sarama.Config) {
 	saramaConfig = sarama.NewConfig()
-	saramaConfig.Version = sarama.V1_1_0_0
+	saramaConfig.Version = sarama.V0_11_0_0
 	saramaConfig.Producer.Return.Successes = true
 
 	cluster := currentCluster
